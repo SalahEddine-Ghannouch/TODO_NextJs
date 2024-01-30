@@ -7,7 +7,7 @@ function getTodos() {
 }
 
 async function toggleTodo(id: string, complete: boolean) {
-  "use server"
+  "use server" 
 
   await prisma.todo.update({ where: { id }, data: { complete } })
 }
